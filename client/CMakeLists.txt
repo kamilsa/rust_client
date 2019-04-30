@@ -8,7 +8,7 @@ else ()
   set(TARGET_DIR "release")
 endif ()
 
-#set(CLIENT_SO "${CMAKE_CURRENT_BINARY_DIR}/${TARGET_DIR}/libclient.dylib")
+set(CLIENT_SO "${CMAKE_CURRENT_BINARY_DIR}/${TARGET_DIR}/libclient.dylib")
 
 add_custom_target(client ALL
     COMMENT "Compiling client module"

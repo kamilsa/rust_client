@@ -7,7 +7,7 @@ enable_testing()
 add_subdirectory(client)
 
 set(SOURCE main.cpp)
-#get_target_property(CLIENT_DIR client LOCATION)
+get_target_property(CLIENT_DIR client LOCATION)
 
 add_executable(main ${SOURCE})
 target_link_libraries(main ${CLIENT_DIR}/libclient.dylib)
